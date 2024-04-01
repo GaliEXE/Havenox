@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "havenox",
+	"version": "${version}",
+	"name": "Havenox",
+	"description": "This is the Havenox SMP Mod [Currently Under Development!]",
+	"authors": [
+		"Gali7"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/havenox/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.gali.havenox.Havenox"
+		],
+		"client": [
+			"net.gali.havenox.HavenoxClient"
+		],
+		"fabric-datagen": [
+			"net.gali.havenox.HavenoxDataGenerator"
+		]
+	},
+	"mixins": [
+		"havenox.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
