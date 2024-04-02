@@ -20,7 +20,5 @@ public class ModItems {
     }
     public static void registerModItems(){
         Havenox.LOGGER.info("Registering Mod Items for " + Havenox.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModItems::addItemsToIngredientItemGroup);
     }
 }
