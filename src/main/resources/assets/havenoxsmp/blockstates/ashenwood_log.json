@@ -1,8 +1,7 @@
 {
   "variants": {
-    "":{
-      "model": "havenoxsmp:block/ashenwood_log"
-    }
-
+    "axis=z": { "model": "havenoxsmp:block/ashenwood_log_z"},
+    "axis=x": { "model": "havenoxsmp:block/ashenwood_log_x"},
+    "axis=y": { "model": "havenoxsmp:block/ashenwood_log_y"}
   }
 }

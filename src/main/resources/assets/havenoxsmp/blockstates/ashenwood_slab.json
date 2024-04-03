@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "havenoxsmp:block/ashenwood_slab"
+    },
+    "type=double": {
+      "model": "havenoxsmp:block/ashenwood_planks"
+    },
+    "type=top": {
+      "model": "havenoxsmp:block/ashenwood_slab_top"
+    }
+  }
+}

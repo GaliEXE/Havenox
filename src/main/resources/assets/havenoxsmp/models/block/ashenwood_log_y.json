@@ -1,5 +1,5 @@
 {
-  "parent": "block/cube_column",
+  "parent": "block/cube_column_uv_locked_y",
   "textures": {
     "end": "havenoxsmp:block/ashenwood_log_top",
     "side": "havenoxsmp:block/ashenwood_log"

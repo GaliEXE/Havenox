@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "havenoxsmp:ashenwood_log"
+    }
+  ],
+  "result": {
+    "item":"havenoxsmp:ashenwood_planks",
+    "count" : 4
+  }
+}
