@@ -1,6 +1,8 @@
 {
   "block.havenoxsmp.ashenwood_log": "Ashenwood Log",
   "block.havenoxsmp.ashenwood_planks": "Ashenwood Planks",
-  "block.havenoxsmp.ashenwood_slab": "Ashenwood Slab"
+  "block.havenoxsmp.ashenwood_slab": "Ashenwood Slab",
+
+  "item.havenoxsmp.recall_scroll": "Recall Scroll"
 
 }
