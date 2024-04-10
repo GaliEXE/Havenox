@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "havenoxsmp:ashenwood",
+    "havenoxsmp:stripped_ashenwood_log",
+    "havenoxsmp:stripped_ashenwood",
+    "havenoxsmp:ashenwood_planks",
+    "havenoxsmp:ashenwood_slab",
+    "havenoxsmp:ashenwood_log",
+    "havenoxsmp:ashenwood_stairs",
+    "havenoxsmp:ashenwood_pressure_plate",
+    "havenoxsmp:ashenwood_button",
+    "havenoxsmp:ashenwood_fence",
+    "havenoxsmp:ashenwood_fence_gate",
+    "havenoxsmp:ashenwood_door",
+    "havenoxsmp:ashenwood_trapdoor"
+  ]
+}

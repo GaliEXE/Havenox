@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "havenoxsmp:ashenwood_planks"
+    }
+  ],
+  "result": {
+    "item": "havenoxsmp:ashenwood_button"
+  }
+}

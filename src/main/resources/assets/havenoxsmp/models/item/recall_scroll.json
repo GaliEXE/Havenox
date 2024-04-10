@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "havenoxsmp:item/recall_scroll_beta"
-  }
-}

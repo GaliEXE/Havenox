@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "havenoxsmp:block/ashenwood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "havenoxsmp:block/ashenwood"
+    },
+    "axis=z": {
+      "model": "havenoxsmp:block/ashenwood",
+      "x": 90
+    }
+  }
+}

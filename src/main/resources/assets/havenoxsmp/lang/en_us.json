@@ -1,8 +1,24 @@
 {
   "block.havenoxsmp.ashenwood_log": "Ashenwood Log",
+  "block.havenoxsmp.ashenwood": "Ashenwood",
+  "block.havenoxsmp.stripped_ashenwood_log": "Stripped Ashenwood Log",
+  "block.havenoxsmp.stripped_ashenwood": "Stripped Ashenwood",
   "block.havenoxsmp.ashenwood_planks": "Ashenwood Planks",
   "block.havenoxsmp.ashenwood_slab": "Ashenwood Slab",
+  "block.havenoxsmp.ashenwood_stairs": "Ashenwood Stairs",
+  "block.havenoxsmp.ashenwood_button": "Ashenwood Button",
+  "block.havenoxsmp.ashenwood_pressure_plate": "Ashenwood Pressure Plate",
+  "block.havenoxsmp.ashenwood_fence": "Ashenwood Fence",
+  "block.havenoxsmp.ashenwood_fence_gate": "Ashenwood Fence Gate",
+  "block.havenoxsmp.ashenwood_door": "Ashenwood Door",
+  "block.havenoxsmp.ashenwood_trapdoor": "Ashenwood Trapdoor",
 
-  "item.havenoxsmp.recall_scroll": "Recall Scroll"
+  "item.havenoxsmp.ashenwood_waster": "Ashenwood Waster",
+  "item.havenoxsmp.ashenwood_pickaxe": "Ashenwood Pickaxe",
+  "item.havenoxsmp.ashenwood_hatchet": "Ashenwood Hatchet",
+  "item.havenoxsmp.ashenwood_spade": "Ashenwood Spade",
+  "item.havenoxsmp.ashenwood_hoe": "Ashenwood Hoe",
+  "item.havenoxsmp.recall_scroll": "Recall Scroll",
+  "item.havenoxsmp.hamburger": "Hamburger"
 
 }

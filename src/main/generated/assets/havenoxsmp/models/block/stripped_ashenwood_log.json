@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "havenoxsmp:block/stripped_ashenwood_log_top",
+    "side": "havenoxsmp:block/stripped_ashenwood_log"
+  }
+}

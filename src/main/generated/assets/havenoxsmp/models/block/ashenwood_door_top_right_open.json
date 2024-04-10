@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "havenoxsmp:block/ashenwood_door_bottom",
+    "top": "havenoxsmp:block/ashenwood_door_top"
+  }
+}

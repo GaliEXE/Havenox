@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": {
+      "item": "havenoxsmp:ashenwood_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SAS",
+    "SAS"
+  ],
+  "result": {
+    "item": "havenoxsmp:ashenwood_fence_gate"
+  }
+}

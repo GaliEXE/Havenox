@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "havenoxsmp:block/ashenwood_log_top",
-    "side": "havenoxsmp:block/ashenwood_log"
-  }
-}
