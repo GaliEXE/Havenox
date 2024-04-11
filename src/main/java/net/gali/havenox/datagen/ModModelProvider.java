@@ -32,12 +32,27 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.ASHENWOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.ASHENWOOD_TRAPDOOR);
 
+        BlockStateModelGenerator.BlockTexturePool zephyrwoodPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ZEPHYRWOOD_PLANKS);
+
+        blockStateModelGenerator.registerLog(ModBlocks.ZEPHYRWOOD_LOG).log(ModBlocks.ZEPHYRWOOD_LOG).wood(ModBlocks.ZEPHYRWOOD);
+
+        zephyrwoodPool.stairs(ModBlocks.ZEPHYRWOOD_STAIRS);
+        zephyrwoodPool.slab(ModBlocks.ZEPHYRWOOD_SLAB);
+        zephyrwoodPool.button(ModBlocks.ZEPHYRWOOD_BUTTON);
+        zephyrwoodPool.pressurePlate(ModBlocks.ZEPHYRWOOD_PRESSURE_PLATE);
+        zephyrwoodPool.fence(ModBlocks.ZEPHYRWOOD_FENCE);
+        zephyrwoodPool.fenceGate(ModBlocks.ZEPHYRWOOD_FENCE_GATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.ZEPHYRWOOD_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.ZEPHYRWOOD_TRAPDOOR);
+
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.RECALL_SCROLL_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.HAMBURGER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ASHENWOOD_ROD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ASHENWOOD_WASTER, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ASHENWOOD_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.ASHENWOOD_HATCHET, Models.HANDHELD);

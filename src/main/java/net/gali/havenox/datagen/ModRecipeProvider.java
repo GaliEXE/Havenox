@@ -14,6 +14,8 @@ import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
+import java.awt.*;
+
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -30,6 +32,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.ASHENWOOD_PLANKS), conditionsFromItem(ModBlocks.ASHENWOOD_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ASHENWOOD_STAIRS)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ASHENWOOD, 4)
+                .pattern("LL")
+                .pattern("LL")
+                .input('L', ModBlocks.ASHENWOOD_LOG)
+                .criterion(hasItem(ModBlocks.ASHENWOOD_LOG), conditionsFromItem(ModBlocks.ASHENWOOD_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ASHENWOOD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_ASHENWOOD, 4)
+                .pattern("LL")
+                .pattern("LL")
+                .input('L', ModBlocks.STRIPPED_ASHENWOOD_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_ASHENWOOD_LOG), conditionsFromItem(ModBlocks.STRIPPED_ASHENWOOD_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STRIPPED_ASHENWOOD)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ASHENWOOD_SLAB, 6)
                 .pattern("AAA")
                 .input('A', ModBlocks.ASHENWOOD_PLANKS)
@@ -40,6 +56,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModBlocks.ASHENWOOD_PLANKS)
                 .criterion(hasItem(ModBlocks.ASHENWOOD_PLANKS), conditionsFromItem(ModBlocks.ASHENWOOD_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ASHENWOOD_BUTTON)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ASHENWOOD_ROD, 4)
+                        .input(ModBlocks.ASHENWOOD_PLANKS)
+                        .input(Items.STICK)
+                        .criterion(hasItem(ModBlocks.ASHENWOOD_PLANKS), conditionsFromItem(ModBlocks.ASHENWOOD_PLANKS))
+                        .offerTo(exporter, new Identifier(getRecipeName(ModItems.ASHENWOOD_ROD)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ASHENWOOD_PRESSURE_PLATE, 1)
                 .pattern("AA ")
@@ -83,7 +105,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("A")
                 .pattern("S")
                 .input('A', ModBlocks.ASHENWOOD_PLANKS)
-                .input('S', Items.STICK)
+                .input('S', ModItems.ASHENWOOD_ROD)
                 .criterion(hasItem(ModBlocks.ASHENWOOD_PLANKS), conditionsFromItem(ModBlocks.ASHENWOOD_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ASHENWOOD_WASTER)));
 
@@ -92,7 +114,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("AS ")
                 .pattern(" S ")
                 .input('A', ModBlocks.ASHENWOOD_PLANKS)
-                .input('S', Items.STICK)
+                .input('S', ModItems.ASHENWOOD_ROD)
                 .criterion(hasItem(ModBlocks.ASHENWOOD_PLANKS), conditionsFromItem(ModBlocks.ASHENWOOD_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ASHENWOOD_HATCHET)));
 
@@ -101,7 +123,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" S ")
                 .pattern(" S ")
                 .input('A', ModBlocks.ASHENWOOD_PLANKS)
-                .input('S', Items.STICK)
+                .input('S', ModItems.ASHENWOOD_ROD)
                 .criterion(hasItem(ModBlocks.ASHENWOOD_PLANKS), conditionsFromItem(ModBlocks.ASHENWOOD_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ASHENWOOD_PICKAXE)));
 
@@ -110,7 +132,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("S")
                 .pattern("S")
                 .input('A', ModBlocks.ASHENWOOD_PLANKS)
-                .input('S', Items.STICK)
+                .input('S', ModItems.ASHENWOOD_ROD)
                 .criterion(hasItem(ModBlocks.ASHENWOOD_PLANKS), conditionsFromItem(ModBlocks.ASHENWOOD_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ASHENWOOD_SPADE)));
 
@@ -119,9 +141,81 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern(" S ")
                 .pattern(" S ")
                 .input('A', ModBlocks.ASHENWOOD_PLANKS)
-                .input('S', Items.STICK)
+                .input('S', ModItems.ASHENWOOD_ROD)
                 .criterion(hasItem(ModBlocks.ASHENWOOD_PLANKS), conditionsFromItem(ModBlocks.ASHENWOOD_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ASHENWOOD_HOE)));
+
+        //zephyrwood set
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZEPHYRWOOD_PLANKS, 4)
+                .input(ModBlocks.ZEPHYRWOOD_LOG)
+                .criterion(hasItem(ModBlocks.ZEPHYRWOOD_LOG), conditionsFromItem(ModBlocks.ZEPHYRWOOD_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ZEPHYRWOOD_PLANKS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZEPHYRWOOD_STAIRS)
+                .pattern("Z  ")
+                .pattern("ZZ ")
+                .pattern("ZZZ")
+                .input('Z', ModBlocks.ZEPHYRWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.ZEPHYRWOOD_PLANKS), conditionsFromItem(ModBlocks.ZEPHYRWOOD_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ZEPHYRWOOD_STAIRS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZEPHYRWOOD_SLAB)
+                .pattern("ZZZ")
+                .input('Z',ModBlocks.ZEPHYRWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.ZEPHYRWOOD_PLANKS), conditionsFromItem(ModBlocks.ZEPHYRWOOD_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ZEPHYRWOOD_SLAB)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZEPHYRWOOD_FENCE, 3)
+                .pattern("ZSZ")
+                .pattern("ZSZ")
+                .input('Z', ModBlocks.ZEPHYRWOOD_PLANKS)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.ZEPHYRWOOD_PLANKS), conditionsFromItem(ModBlocks.ZEPHYRWOOD_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ZEPHYRWOOD_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZEPHYRWOOD_FENCE_GATE, 1)
+                .pattern("SZS")
+                .pattern("SZS")
+                .input('Z', ModBlocks.ZEPHYRWOOD_PLANKS)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.ZEPHYRWOOD_PLANKS), conditionsFromItem(ModBlocks.ZEPHYRWOOD_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ZEPHYRWOOD_FENCE_GATE)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.ZEPHYRWOOD_BUTTON,1)
+                .input(ModBlocks.ZEPHYRWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.ZEPHYRWOOD_PLANKS), conditionsFromItem(ModBlocks.ZEPHYRWOOD_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ZEPHYRWOOD_BUTTON)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.ZEPHYRWOOD_PRESSURE_PLATE,1)
+                .pattern("ZZ")
+                .input('Z', ModBlocks.ZEPHYRWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.ZEPHYRWOOD_PLANKS), conditionsFromItem(ModBlocks.ZEPHYRWOOD_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ZEPHYRWOOD_PRESSURE_PLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZEPHYRWOOD_DOOR, 3)
+                .pattern("ZZ")
+                .pattern("ZZ")
+                .pattern("ZZ")
+                .input('Z', ModBlocks.ZEPHYRWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.ZEPHYRWOOD_PLANKS), conditionsFromItem(ModBlocks.ZEPHYRWOOD_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ZEPHYRWOOD_DOOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZEPHYRWOOD_TRAPDOOR, 2)
+                .pattern("ZZZ")
+                .pattern("ZZZ")
+                .input('Z', ModBlocks.ZEPHYRWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.ZEPHYRWOOD_PLANKS), conditionsFromItem(ModBlocks.ZEPHYRWOOD_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ZEPHYRWOOD_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZEPHYRWOOD, 4)
+                .pattern("LL")
+                .pattern("LL")
+                .input('L', ModBlocks.ZEPHYRWOOD_LOG)
+                .criterion(hasItem(ModBlocks.ZEPHYRWOOD_LOG), conditionsFromItem(ModBlocks.ZEPHYRWOOD_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ZEPHYRWOOD)));
+
+
 
     }
 }

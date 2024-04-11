@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:zephyrwood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zephyrwood_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "havenoxsmp:zephyrwood_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zephyrwood_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:zephyrwood"
+    ]
+  }
+}

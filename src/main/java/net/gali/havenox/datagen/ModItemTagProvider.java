@@ -17,10 +17,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider{
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-        getOrCreateTagBuilder(ItemTags.PLANKS)
-                .add(ModBlocks.ASHENWOOD_PLANKS.asItem());
 
-        getOrCreateTagBuilder(ItemTags.LOGS)
-                .add(ModBlocks.ASHENWOOD_LOG.asItem());
     }
 }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "Z": {
+      "item": "havenoxsmp:zephyrwood_planks"
+    }
+  },
+  "pattern": [
+    "ZZ",
+    "ZZ",
+    "ZZ"
+  ],
+  "result": {
+    "count": 3,
+    "item": "havenoxsmp:zephyrwood_door"
+  }
+}

@@ -13,6 +13,17 @@
     "havenoxsmp:ashenwood_fence",
     "havenoxsmp:ashenwood_fence_gate",
     "havenoxsmp:ashenwood_door",
-    "havenoxsmp:ashenwood_trapdoor"
+    "havenoxsmp:ashenwood_trapdoor",
+    "havenoxsmp:zephyrwood",
+    "havenoxsmp:zephyrwood_log",
+    "havenoxsmp:zephyrwood_planks",
+    "havenoxsmp:zephyrwood_stairs",
+    "havenoxsmp:zephyrwood_slab",
+    "havenoxsmp:zephyrwood_fence",
+    "havenoxsmp:zephyrwood_fence_gate",
+    "havenoxsmp:zephyrwood_door",
+    "havenoxsmp:zephyrwood_trapdoor",
+    "havenoxsmp:zephyrwood_pressure_plate",
+    "havenoxsmp:zephyrwood_button"
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "textures": {
+    "bottom": "havenoxsmp:block/zephyrwood_door_bottom",
+    "top": "havenoxsmp:block/zephyrwood_door_top"
+  }
+}

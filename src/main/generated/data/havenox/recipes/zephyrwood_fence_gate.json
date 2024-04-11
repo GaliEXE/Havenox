@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "Z": {
+      "item": "havenoxsmp:zephyrwood_planks"
+    }
+  },
+  "pattern": [
+    "SZS",
+    "SZS"
+  ],
+  "result": {
+    "item": "havenoxsmp:zephyrwood_fence_gate"
+  }
+}

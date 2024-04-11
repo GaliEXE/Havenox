@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "havenoxsmp:block/zephyrwood_slab"
+    },
+    "type=double": {
+      "model": "havenoxsmp:block/zephyrwood_planks"
+    },
+    "type=top": {
+      "model": "havenoxsmp:block/zephyrwood_slab_top"
+    }
+  }
+}

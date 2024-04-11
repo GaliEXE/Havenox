@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "havenoxsmp:block/zephyrwood_planks",
+    "side": "havenoxsmp:block/zephyrwood_planks",
+    "top": "havenoxsmp:block/zephyrwood_planks"
+  }
+}

@@ -19,6 +19,8 @@ public class ModItems {
     public static final Item RECALL_SCROLL_ITEM = registerItem("recall_scroll",
             new RecallScrollBETAItem(new FabricItemSettings().maxDamage(12)));
 
+    public static final Item ASHENWOOD_ROD = registerItem("ashenwood_rod",
+            new Item(new FabricItemSettings()));
     public static final Item ASHENWOOD_PICKAXE = registerItem("ashenwood_pickaxe",
             new PickaxeItem(ModToolMaterial.ASHENWOOD, 1, 2f, new FabricItemSettings()));
     public static final Item ASHENWOOD_HATCHET = registerItem("ashenwood_hatchet",
@@ -44,6 +46,10 @@ public class ModItems {
         entries.addAfter(Items.WOODEN_AXE, ModItems.ASHENWOOD_HATCHET);
     }
 
+    private static void addItemsToIngrItemGroup(FabricItemGroupEntries entries){
+        entries.addAfter(Items.STICK, ModItems.ASHENWOOD_ROD);
+    }
+
     private static void addItemsToToolsItemGroup(FabricItemGroupEntries entries){
         entries.addAfter(Items.WOODEN_HOE, ModItems.ASHENWOOD_SPADE);
         entries.addAfter(ModItems.ASHENWOOD_SPADE, ModItems.ASHENWOOD_PICKAXE);
@@ -62,6 +68,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolsItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngrItemGroup);
         Havenox.LOGGER.info("Registering Mod Items for " + Havenox.MOD_ID);
     }
 }

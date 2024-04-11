@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:zephyrwood_button"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zephyrwood_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "havenoxsmp:zephyrwood_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zephyrwood_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:zephyrwood_button"
+    ]
+  }
+}

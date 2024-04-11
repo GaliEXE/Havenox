@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "havenoxsmp:block/zephyrwood_log_top",
+    "side": "havenoxsmp:block/zephyrwood_log"
+  }
+}

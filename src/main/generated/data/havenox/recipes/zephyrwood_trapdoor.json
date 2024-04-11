@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "Z": {
+      "item": "havenoxsmp:zephyrwood_planks"
+    }
+  },
+  "pattern": [
+    "ZZZ",
+    "ZZZ"
+  ],
+  "result": {
+    "count": 2,
+    "item": "havenoxsmp:zephyrwood_trapdoor"
+  }
+}
