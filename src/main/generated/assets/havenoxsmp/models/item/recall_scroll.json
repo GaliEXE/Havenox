@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "havenoxsmp:item/recall_scroll_beta"
+    "layer0": "havenoxsmp:item/recall_scroll"
   }
 }

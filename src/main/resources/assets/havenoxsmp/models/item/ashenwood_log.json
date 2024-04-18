@@ -1,3 +1,6 @@
 {
-  "parent": "havenoxsmp:block/ashenwood_log"
+  "parent": "havenoxsmp:block/ashenwood_log",
+  "display": {
+    "lore": ["Your Lore Here"]
+  }
 }

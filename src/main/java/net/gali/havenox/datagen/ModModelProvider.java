@@ -35,6 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool zephyrwoodPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ZEPHYRWOOD_PLANKS);
 
         blockStateModelGenerator.registerLog(ModBlocks.ZEPHYRWOOD_LOG).log(ModBlocks.ZEPHYRWOOD_LOG).wood(ModBlocks.ZEPHYRWOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_ZEPHYRWOOD_LOG).log(ModBlocks.STRIPPED_ZEPHYRWOOD_LOG).wood(ModBlocks.STRIPPED_ZEPHYRWOOD);
 
         zephyrwoodPool.stairs(ModBlocks.ZEPHYRWOOD_STAIRS);
         zephyrwoodPool.slab(ModBlocks.ZEPHYRWOOD_SLAB);
@@ -45,6 +46,21 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.ZEPHYRWOOD_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.ZEPHYRWOOD_TRAPDOOR);
+
+        BlockStateModelGenerator.BlockTexturePool wisteriaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WISTERIA_PLANKS);
+
+        blockStateModelGenerator.registerLog(ModBlocks.WISTERIA_LOG).log(ModBlocks.WISTERIA_LOG).wood(ModBlocks.WISTERIA_WOOD);
+        //blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_WISTERIA_LOG).log(ModBlocks.STRIPPED_WISTERIA_LOG).wood(ModBlocks.STRIPPED_WISTERIA_LOG);
+
+        wisteriaPool.stairs(ModBlocks.WISTERIA_STAIRS);
+        wisteriaPool.slab(ModBlocks.WISTERIA_SLAB);
+        wisteriaPool.button(ModBlocks.WISTERIA_BUTTON);
+        wisteriaPool.pressurePlate(ModBlocks.WISTERIA_PRESSURE_PLATE);
+        wisteriaPool.fence(ModBlocks.WISTERIA_FENCE);
+        wisteriaPool.fenceGate(ModBlocks.WISTERIA_FENCE_GATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.WISTERIA_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.WISTERIA_TRAPDOOR);
 
     }
 

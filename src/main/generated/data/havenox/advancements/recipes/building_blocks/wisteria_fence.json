@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:wisteria_fence"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wisteria_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "havenoxsmp:wisteria_planks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_wisteria_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:wisteria_fence"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left_open",
+  "textures": {
+    "bottom": "havenoxsmp:block/wisteria_door_bottom",
+    "top": "havenoxsmp:block/wisteria_door_top"
+  }
+}

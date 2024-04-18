@@ -152,7 +152,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.ZEPHYRWOOD_LOG), conditionsFromItem(ModBlocks.ZEPHYRWOOD_LOG))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ZEPHYRWOOD_PLANKS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZEPHYRWOOD_STAIRS)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZEPHYRWOOD_STAIRS,4)
                 .pattern("Z  ")
                 .pattern("ZZ ")
                 .pattern("ZZZ")
@@ -160,7 +160,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.ZEPHYRWOOD_PLANKS), conditionsFromItem(ModBlocks.ZEPHYRWOOD_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ZEPHYRWOOD_STAIRS)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZEPHYRWOOD_SLAB)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZEPHYRWOOD_SLAB,6)
                 .pattern("ZZZ")
                 .input('Z',ModBlocks.ZEPHYRWOOD_PLANKS)
                 .criterion(hasItem(ModBlocks.ZEPHYRWOOD_PLANKS), conditionsFromItem(ModBlocks.ZEPHYRWOOD_PLANKS))
@@ -215,7 +215,90 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.ZEPHYRWOOD_LOG), conditionsFromItem(ModBlocks.ZEPHYRWOOD_LOG))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ZEPHYRWOOD)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_ZEPHYRWOOD, 4)
+                .pattern("LL")
+                .pattern("LL")
+                .input('L', ModBlocks.STRIPPED_ZEPHYRWOOD_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_ZEPHYRWOOD), conditionsFromItem(ModBlocks.STRIPPED_ZEPHYRWOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STRIPPED_ZEPHYRWOOD)));
 
+        //wisteria set
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WISTERIA_PLANKS, 4)
+                .input(ModBlocks.WISTERIA_LOG)
+                .criterion(hasItem(ModBlocks.WISTERIA_LOG), conditionsFromItem(ModBlocks.WISTERIA_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_PLANKS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WISTERIA_STAIRS,4)
+                .pattern("W  ")
+                .pattern("WW ")
+                .pattern("WWW")
+                .input('W', ModBlocks.WISTERIA_PLANKS)
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_STAIRS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WISTERIA_SLAB,6)
+                .pattern("WWW")
+                .input('W',ModBlocks.WISTERIA_PLANKS)
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_SLAB)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WISTERIA_FENCE, 3)
+                .pattern("WSW")
+                .pattern("WSW")
+                .input('W', ModBlocks.WISTERIA_PLANKS)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_FENCE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WISTERIA_FENCE_GATE, 1)
+                .pattern("SWS")
+                .pattern("SWS")
+                .input('W', ModBlocks.WISTERIA_PLANKS)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_FENCE_GATE)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.WISTERIA_BUTTON,1)
+                .input(ModBlocks.WISTERIA_PLANKS)
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_BUTTON)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.WISTERIA_PRESSURE_PLATE,1)
+                .pattern("WW")
+                .input('W', ModBlocks.WISTERIA_PLANKS)
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_PRESSURE_PLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WISTERIA_DOOR, 3)
+                .pattern("WW")
+                .pattern("WW")
+                .pattern("WW")
+                .input('W', ModBlocks.WISTERIA_PLANKS)
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_DOOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WISTERIA_TRAPDOOR, 2)
+                .pattern("WWW")
+                .pattern("WWW")
+                .input('W', ModBlocks.WISTERIA_PLANKS)
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_TRAPDOOR)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WISTERIA_WOOD, 4)
+                .pattern("LL")
+                .pattern("LL")
+                .input('L', ModBlocks.WISTERIA_LOG)
+                .criterion(hasItem(ModBlocks.WISTERIA_LOG), conditionsFromItem(ModBlocks.WISTERIA_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_WOOD)));
+
+        /*ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_ZEPHYRWOOD, 4)
+                .pattern("LL")
+                .pattern("LL")
+                .input('L', ModBlocks.STRIPPED_ZEPHYRWOOD_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_ZEPHYRWOOD), conditionsFromItem(ModBlocks.STRIPPED_ZEPHYRWOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STRIPPED_ZEPHYRWOOD)));
+        */
 
     }
 }

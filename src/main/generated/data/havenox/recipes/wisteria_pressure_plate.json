@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "W": {
+      "item": "havenoxsmp:wisteria_planks"
+    }
+  },
+  "pattern": [
+    "WW"
+  ],
+  "result": {
+    "item": "havenoxsmp:wisteria_pressure_plate"
+  }
+}

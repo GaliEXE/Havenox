@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "havenoxsmp:ashenwood_log",
+    "havenoxsmp:stripped_ashenwood_log",
+    "havenoxsmp:zephyrwood_log",
+    "havenoxsmp:stripped_zephyrwood_log",
+    "havenoxsmp:wisteria_log"
+  ]
+}

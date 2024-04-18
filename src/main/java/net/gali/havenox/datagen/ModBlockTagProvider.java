@@ -40,6 +40,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 //zephyrwood set
                 .add(ModBlocks.ZEPHYRWOOD)
                 .add(ModBlocks.ZEPHYRWOOD_LOG)
+                .add(ModBlocks.STRIPPED_ZEPHYRWOOD_LOG)
+                .add(ModBlocks.STRIPPED_ZEPHYRWOOD)
                 .add(ModBlocks.ZEPHYRWOOD_PLANKS)
                 .add(ModBlocks.ZEPHYRWOOD_STAIRS)
                 .add(ModBlocks.ZEPHYRWOOD_SLAB)
@@ -48,7 +50,21 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ZEPHYRWOOD_DOOR)
                 .add(ModBlocks.ZEPHYRWOOD_TRAPDOOR)
                 .add(ModBlocks.ZEPHYRWOOD_PRESSURE_PLATE)
-                .add(ModBlocks.ZEPHYRWOOD_BUTTON);
+                .add(ModBlocks.ZEPHYRWOOD_BUTTON)
+                //wisteria set
+                .add(ModBlocks.WISTERIA_WOOD)
+                .add(ModBlocks.WISTERIA_LOG)
+                //.add(ModBlocks.STRIPPED_WISTERIA_LOG)
+                //.add(ModBlocks.STRIPPED_WISTERIA_WOOD)
+                .add(ModBlocks.WISTERIA_PLANKS)
+                .add(ModBlocks.WISTERIA_STAIRS)
+                .add(ModBlocks.WISTERIA_SLAB)
+                .add(ModBlocks.WISTERIA_FENCE)
+                .add(ModBlocks.WISTERIA_FENCE_GATE)
+                .add(ModBlocks.WISTERIA_DOOR)
+                .add(ModBlocks.WISTERIA_TRAPDOOR)
+                .add(ModBlocks.WISTERIA_PRESSURE_PLATE)
+                .add(ModBlocks.WISTERIA_BUTTON);
 
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE);
@@ -65,21 +81,27 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.ASHENWOOD_FENCE)
-                .add(ModBlocks.ZEPHYRWOOD_FENCE);
+                .add(ModBlocks.ZEPHYRWOOD_FENCE)
+                .add(ModBlocks.WISTERIA_FENCE);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(ModBlocks.ASHENWOOD_FENCE)
-                .add(ModBlocks.ZEPHYRWOOD_FENCE);
+                .add(ModBlocks.ZEPHYRWOOD_FENCE)
+                .add(ModBlocks.WISTERIA_FENCE);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.ASHENWOOD_FENCE_GATE)
-                .add(ModBlocks.ZEPHYRWOOD_FENCE_GATE);
+                .add(ModBlocks.ZEPHYRWOOD_FENCE_GATE)
+                .add(ModBlocks.WISTERIA_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.WALLS);
 
         getOrCreateTagBuilder(BlockTags.LOGS)
                 .add(ModBlocks.ASHENWOOD_LOG)
                 .add(ModBlocks.STRIPPED_ASHENWOOD_LOG)
-                .add(ModBlocks.ZEPHYRWOOD_LOG);
+                .add(ModBlocks.ZEPHYRWOOD_LOG)
+                .add(ModBlocks.STRIPPED_ZEPHYRWOOD_LOG)
+                .add(ModBlocks.WISTERIA_LOG);
+                //.add(ModBlocks.STRIPPED_WISTERIA_LOG);
     }
 }

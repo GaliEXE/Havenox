@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "havenoxsmp:wisteria_planks"
+    }
+  },
+  "pattern": [
+    "SWS",
+    "SWS"
+  ],
+  "result": {
+    "item": "havenoxsmp:wisteria_fence_gate"
+  }
+}

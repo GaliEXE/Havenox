@@ -11,7 +11,24 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "havenoxsmp:ashenwood_log"
+          "name": "havenoxsmp:ashenwood_log",
+          "functions":[
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Ashenwood Log",
+                "color": "gray"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "§7 Element: §c Fire",
+                "§7 Lvl: 1",
+                "The Ashenwood tree has no leaves due to the intense heat within."
+              ]
+            }
+          ]
         }
       ],
       "rolls": 1.0

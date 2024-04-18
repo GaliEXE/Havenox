@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "havenoxsmp:block/stripped_zephyrwood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "havenoxsmp:block/stripped_zephyrwood"
+    },
+    "axis=z": {
+      "model": "havenoxsmp:block/stripped_zephyrwood",
+      "x": 90
+    }
+  }
+}

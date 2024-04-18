@@ -31,6 +31,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         //zephyrwood set
         addDrop(ModBlocks.ZEPHYRWOOD_LOG);
         addDrop(ModBlocks.ZEPHYRWOOD);
+        addDrop(ModBlocks.STRIPPED_ZEPHYRWOOD_LOG);
+        addDrop(ModBlocks.STRIPPED_ZEPHYRWOOD);
         addDrop(ModBlocks.ZEPHYRWOOD_PLANKS);
         addDrop(ModBlocks.ZEPHYRWOOD_STAIRS);
         addDrop(ModBlocks.ZEPHYRWOOD_SLAB, slabDrops(ModBlocks.ZEPHYRWOOD_SLAB));
@@ -40,6 +42,20 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ZEPHYRWOOD_TRAPDOOR);
         addDrop(ModBlocks.ZEPHYRWOOD_PRESSURE_PLATE);
         addDrop(ModBlocks.ZEPHYRWOOD_BUTTON);
+        //wisteria set
+        addDrop(ModBlocks.WISTERIA_LOG);
+        addDrop(ModBlocks.WISTERIA_WOOD);
+        //addDrop(ModBlocks.STRIPPED_WISTERIA_LOG);
+        //addDrop(ModBlocks.STRIPPED_WISTERIA_WOOD);
+        addDrop(ModBlocks.WISTERIA_PLANKS);
+        addDrop(ModBlocks.WISTERIA_STAIRS);
+        addDrop(ModBlocks.WISTERIA_SLAB, slabDrops(ModBlocks.WISTERIA_SLAB));
+        addDrop(ModBlocks.WISTERIA_FENCE);
+        addDrop(ModBlocks.WISTERIA_FENCE_GATE);
+        addDrop(ModBlocks.WISTERIA_DOOR, doorDrops(ModBlocks.WISTERIA_DOOR));
+        addDrop(ModBlocks.WISTERIA_TRAPDOOR);
+        addDrop(ModBlocks.WISTERIA_PRESSURE_PLATE);
+        addDrop(ModBlocks.WISTERIA_BUTTON);
 
 
 

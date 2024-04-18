@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "havenoxsmp:block/wisteria_planks"
+  }
+}

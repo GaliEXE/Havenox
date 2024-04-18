@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "havenoxsmp:wisteria_planks"
+    }
+  ],
+  "result": {
+    "item": "havenoxsmp:wisteria_button"
+  }
+}

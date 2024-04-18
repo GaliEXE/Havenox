@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "L": {
+      "item": "havenoxsmp:stripped_zephyrwood_log"
+    }
+  },
+  "pattern": [
+    "LL",
+    "LL"
+  ],
+  "result": {
+    "count": 4,
+    "item": "havenoxsmp:stripped_zephyrwood"
+  }
+}

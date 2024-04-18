@@ -16,6 +16,8 @@
     "havenoxsmp:ashenwood_trapdoor",
     "havenoxsmp:zephyrwood",
     "havenoxsmp:zephyrwood_log",
+    "havenoxsmp:stripped_zephyrwood_log",
+    "havenoxsmp:stripped_zephyrwood",
     "havenoxsmp:zephyrwood_planks",
     "havenoxsmp:zephyrwood_stairs",
     "havenoxsmp:zephyrwood_slab",
@@ -24,6 +26,17 @@
     "havenoxsmp:zephyrwood_door",
     "havenoxsmp:zephyrwood_trapdoor",
     "havenoxsmp:zephyrwood_pressure_plate",
-    "havenoxsmp:zephyrwood_button"
+    "havenoxsmp:zephyrwood_button",
+    "havenoxsmp:wisteria_wood",
+    "havenoxsmp:wisteria_log",
+    "havenoxsmp:wisteria_planks",
+    "havenoxsmp:wisteria_stairs",
+    "havenoxsmp:wisteria_slab",
+    "havenoxsmp:wisteria_fence",
+    "havenoxsmp:wisteria_fence_gate",
+    "havenoxsmp:wisteria_door",
+    "havenoxsmp:wisteria_trapdoor",
+    "havenoxsmp:wisteria_pressure_plate",
+    "havenoxsmp:wisteria_button"
   ]
 }
