@@ -16,7 +16,7 @@ import java.awt.image.PixelGrabber;
 
 public class ModItems {
 
-    public static final Item RECALL_SCROLL_ITEM = registerItem("recall_scroll",
+    public static final Item RECALL_SCROLL_BETA = registerItem("recall_scroll",
             new RecallScrollBETAItem(new FabricItemSettings().maxDamage(12)));
 
     public static final Item ASHENWOOD_ROD = registerItem("ashenwood_rod",
@@ -35,7 +35,7 @@ public class ModItems {
     public static final Item HAMBURGER = registerItem("hamburger", new Item(new FabricItemSettings().food(ModFoodComponents.HAMBURGER)));
 
     private static void addItemsToBuildItemGroup(FabricItemGroupEntries entries) {
-        entries.add(RECALL_SCROLL_ITEM);
+        entries.add(RECALL_SCROLL_BETA);
     }
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries) {
         entries.add(HAMBURGER);

@@ -28,6 +28,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ASHENWOOD_FENCE_GATE);
         addDrop(ModBlocks.ASHENWOOD_DOOR, doorDrops(ModBlocks.ASHENWOOD_DOOR));
         addDrop(ModBlocks.ASHENWOOD_TRAPDOOR);
+        addDrop(ModBlocks.ASHENWOOD_CRAFTING_TABLE);
         //zephyrwood set
         addDrop(ModBlocks.ZEPHYRWOOD_LOG);
         addDrop(ModBlocks.ZEPHYRWOOD);
@@ -45,8 +46,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         //wisteria set
         addDrop(ModBlocks.WISTERIA_LOG);
         addDrop(ModBlocks.WISTERIA_WOOD);
-        //addDrop(ModBlocks.STRIPPED_WISTERIA_LOG);
-        //addDrop(ModBlocks.STRIPPED_WISTERIA_WOOD);
+        addDrop(ModBlocks.STRIPPED_WISTERIA_LOG);
+        addDrop(ModBlocks.STRIPPED_WISTERIA_WOOD);
         addDrop(ModBlocks.WISTERIA_PLANKS);
         addDrop(ModBlocks.WISTERIA_STAIRS);
         addDrop(ModBlocks.WISTERIA_SLAB, slabDrops(ModBlocks.WISTERIA_SLAB));
@@ -56,6 +57,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.WISTERIA_TRAPDOOR);
         addDrop(ModBlocks.WISTERIA_PRESSURE_PLATE);
         addDrop(ModBlocks.WISTERIA_BUTTON);
+        addDrop(ModBlocks.WISTERIA_SAPLING);
 
 
 

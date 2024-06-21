@@ -10,6 +10,20 @@ base {
 	archivesName = project.archives_base_name
 }
 
+
+
+// Add the generated resources to the main source set
+sourceSets {
+	main {
+		resources {
+			srcDirs += [
+					'src/main/generated',
+					'src/main/resources'
+			]
+		}
+	}
+}
+
 repositories {
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because

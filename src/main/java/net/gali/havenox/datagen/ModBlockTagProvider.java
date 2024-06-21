@@ -37,6 +37,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ASHENWOOD_FENCE_GATE)
                 .add(ModBlocks.ASHENWOOD_DOOR)
                 .add(ModBlocks.ASHENWOOD_TRAPDOOR)
+                .add(ModBlocks.ASHENWOOD_CRAFTING_TABLE)
                 //zephyrwood set
                 .add(ModBlocks.ZEPHYRWOOD)
                 .add(ModBlocks.ZEPHYRWOOD_LOG)
@@ -54,8 +55,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 //wisteria set
                 .add(ModBlocks.WISTERIA_WOOD)
                 .add(ModBlocks.WISTERIA_LOG)
-                //.add(ModBlocks.STRIPPED_WISTERIA_LOG)
-                //.add(ModBlocks.STRIPPED_WISTERIA_WOOD)
+                .add(ModBlocks.STRIPPED_WISTERIA_LOG)
+                .add(ModBlocks.STRIPPED_WISTERIA_WOOD)
                 .add(ModBlocks.WISTERIA_PLANKS)
                 .add(ModBlocks.WISTERIA_STAIRS)
                 .add(ModBlocks.WISTERIA_SLAB)
@@ -69,7 +70,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE);
 
-        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE);
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.WISTERIA_LEAVES);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 
@@ -101,7 +103,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STRIPPED_ASHENWOOD_LOG)
                 .add(ModBlocks.ZEPHYRWOOD_LOG)
                 .add(ModBlocks.STRIPPED_ZEPHYRWOOD_LOG)
-                .add(ModBlocks.WISTERIA_LOG);
-                //.add(ModBlocks.STRIPPED_WISTERIA_LOG);
+                .add(ModBlocks.WISTERIA_LOG)
+                .add(ModBlocks.STRIPPED_WISTERIA_LOG);
+
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.WISTERIA_LEAVES);
+
+        getOrCreateTagBuilder(BlockTags.SAPLINGS)
+                .add(ModBlocks.WISTERIA_SAPLING);
+
+        getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(ModBlocks.ASHENWOOD_PLANKS)
+                .add(ModBlocks.ZEPHYRWOOD_PLANKS)
+                .add(ModBlocks.WISTERIA_PLANKS);
+
     }
 }

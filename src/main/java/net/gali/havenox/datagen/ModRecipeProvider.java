@@ -145,6 +145,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.ASHENWOOD_PLANKS), conditionsFromItem(ModBlocks.ASHENWOOD_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ASHENWOOD_HOE)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ASHENWOOD_CRAFTING_TABLE, 1)
+                .pattern("AA")
+                .pattern("AA")
+                .input('A', ModBlocks.ASHENWOOD_PLANKS)
+                .criterion(hasItem(ModBlocks.ASHENWOOD_PLANKS), conditionsFromItem(ModBlocks.ASHENWOOD_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ASHENWOOD_CRAFTING_TABLE)));
+
         //zephyrwood set
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ZEPHYRWOOD_PLANKS, 4)
@@ -292,13 +299,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.WISTERIA_LOG), conditionsFromItem(ModBlocks.WISTERIA_LOG))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_WOOD)));
 
-        /*ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_ZEPHYRWOOD, 4)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_WISTERIA_WOOD, 4)
                 .pattern("LL")
                 .pattern("LL")
-                .input('L', ModBlocks.STRIPPED_ZEPHYRWOOD_LOG)
-                .criterion(hasItem(ModBlocks.STRIPPED_ZEPHYRWOOD), conditionsFromItem(ModBlocks.STRIPPED_ZEPHYRWOOD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STRIPPED_ZEPHYRWOOD)));
-        */
+                .input('L', ModBlocks.STRIPPED_WISTERIA_LOG)
+                .criterion(hasItem(ModBlocks.STRIPPED_WISTERIA_WOOD), conditionsFromItem(ModBlocks.STRIPPED_WISTERIA_WOOD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.STRIPPED_WISTERIA_WOOD)));
+
 
     }
 }

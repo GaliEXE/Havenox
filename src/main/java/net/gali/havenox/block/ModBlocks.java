@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.gali.havenox.Havenox;
+import net.gali.havenox.block.custom.CustomCraftingTableBlock;
 import net.gali.havenox.block.custom.CustomFenceBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -42,6 +43,8 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.CRIMSON,FabricBlockSettings.copyOf(Blocks.CRIMSON_DOOR)));
     public static final Block ASHENWOOD_TRAPDOOR = registerBlock("ashenwood_trapdoor",
             new TrapdoorBlock(BlockSetType.CRIMSON, FabricBlockSettings.copyOf(Blocks.CRIMSON_TRAPDOOR)));
+    public static final Block ASHENWOOD_CRAFTING_TABLE = registerBlock("ashenwood_crafting_table",
+            new CustomCraftingTableBlock(FabricBlockSettings.copyOf(Blocks.CRAFTING_TABLE)));
 //Zephyrwood Set
     public static final Block ZEPHYRWOOD_LOG = registerBlock("zephyrwood_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.BIRCH_LOG).burnable()));
@@ -74,10 +77,10 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.BIRCH_LOG).burnable()));
     public static final Block WISTERIA_WOOD = registerBlock("wisteria_wood",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.BIRCH_WOOD).burnable()));
-    //public static final Block STRIPPED_WISTERIA_LOG = registerBlock("stripped_wisteria_log",
-           // new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_BIRCH_LOG)));
-    //public static final Block STRIPPED_WISTERIA_WOOD = registerBlock("stripped_wisteria_wood",
-            //new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_BIRCH_WOOD)));
+    public static final Block STRIPPED_WISTERIA_LOG = registerBlock("stripped_wisteria_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_BIRCH_LOG)));
+    public static final Block STRIPPED_WISTERIA_WOOD = registerBlock("stripped_wisteria_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_BIRCH_WOOD)));
     public static final Block WISTERIA_PLANKS = registerBlock("wisteria_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.BIRCH_PLANKS).burnable()));
     public static final Block WISTERIA_STAIRS = registerBlock("wisteria_stairs",
@@ -96,6 +99,12 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.BIRCH, FabricBlockSettings.copyOf(Blocks.BIRCH_DOOR)));
     public static final Block WISTERIA_TRAPDOOR = registerBlock("wisteria_trapdoor",
             new TrapdoorBlock(BlockSetType.BIRCH, FabricBlockSettings.copyOf(Blocks.BIRCH_TRAPDOOR)));
+    public static final Block WISTERIA_LEAVES = registerBlock("wisteria_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.CHERRY_LEAVES)));
+    public static final Block WISTERIA_SAPLING = registerBlock("wisteria_sapling",
+            new SaplingBlock(SaplingGenerator.CHERRY, FabricBlockSettings.copyOf(Blocks.CHERRY_SAPLING)));
+    //public static final Block POTTED_WISTERIA_SAPLING = Registry.register(Registries.BLOCK, new Identifier(Havenox.MOD_ID, "potted_wisteria_sapling"),
+            //new FlowerPotBlock(WISTERIA_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_CHERRY_SAPLING).nonOpaque()));
 
 
     private static void addItemsToItemGroup(FabricItemGroupEntries entries) {
@@ -130,9 +139,9 @@ public class ModBlocks {
         //Wisteria Set
         entries.addAfter(Blocks.MANGROVE_BUTTON, ModBlocks.WISTERIA_LOG);
         entries.addAfter(ModBlocks.WISTERIA_LOG, ModBlocks.WISTERIA_WOOD);
-        //entries.addAfter(ModBlocks.WISTERIA_WOOD, ModBlocks.STRIPPED_WISTERIA_LOG);
-        //entries.addAfter(ModBlocks.STRIPPED_WISTERIA_LOG, ModBlocks.STRIPPED_WISTERIA_WOOD);
-        entries.addAfter(ModBlocks.WISTERIA_WOOD, ModBlocks.WISTERIA_PLANKS);
+        entries.addAfter(ModBlocks.WISTERIA_WOOD, ModBlocks.STRIPPED_WISTERIA_LOG);
+        entries.addAfter(ModBlocks.STRIPPED_WISTERIA_LOG, ModBlocks.STRIPPED_WISTERIA_WOOD);
+        entries.addAfter(ModBlocks.STRIPPED_WISTERIA_WOOD, ModBlocks.WISTERIA_PLANKS);
         entries.addAfter(ModBlocks.WISTERIA_PLANKS, ModBlocks.WISTERIA_STAIRS);
         entries.addAfter(ModBlocks.WISTERIA_STAIRS, ModBlocks.WISTERIA_SLAB);
         entries.addAfter(ModBlocks.WISTERIA_SLAB, ModBlocks.WISTERIA_FENCE);
@@ -142,6 +151,15 @@ public class ModBlocks {
         entries.addAfter(ModBlocks.WISTERIA_TRAPDOOR, ModBlocks.WISTERIA_PRESSURE_PLATE);
         entries.addAfter(ModBlocks.WISTERIA_PRESSURE_PLATE, ModBlocks.WISTERIA_BUTTON);
 
+    }
+
+    private static void addItemsToNatureGroup(FabricItemGroupEntries entries){
+        entries.addAfter(Blocks.MANGROVE_LEAVES, ModBlocks.WISTERIA_LEAVES);
+        entries.addAfter(Blocks.MANGROVE_PROPAGULE, ModBlocks.WISTERIA_SAPLING);
+    }
+
+    private static void addItemsToFunctionalGroup(FabricItemGroupEntries entries){
+        entries.addAfter(Blocks.CRAFTING_TABLE, ModBlocks.ASHENWOOD_CRAFTING_TABLE);
     }
 
     private static Block registerBlock(String name, Block block) {
@@ -158,5 +176,7 @@ public class ModBlocks {
         Havenox.LOGGER.info("Registering ModBlocks for " + Havenox.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModBlocks::addItemsToItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModBlocks::addItemsToNatureGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(ModBlocks::addItemsToFunctionalGroup);
     }
 }

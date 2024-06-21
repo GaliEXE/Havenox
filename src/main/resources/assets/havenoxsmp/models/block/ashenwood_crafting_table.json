@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "havenoxsmp:block/ashenwood_planks",
+    "east": "havenoxsmp:block/ashenwood_crafting_table_side",
+    "north": "havenoxsmp:block/ashenwood_crafting_table_front",
+    "particle": "havenoxsmp:block/ashenwood_crafting_table_front",
+    "south": "havenoxsmp:block/ashenwood_crafting_table_side",
+    "up": "havenoxsmp:block/ashenwood_crafting_table_top",
+    "west": "havenoxsmp:block/ashenwood_crafting_table_front"
+  }
+}

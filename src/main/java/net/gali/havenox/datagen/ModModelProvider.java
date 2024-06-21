@@ -50,7 +50,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool wisteriaPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WISTERIA_PLANKS);
 
         blockStateModelGenerator.registerLog(ModBlocks.WISTERIA_LOG).log(ModBlocks.WISTERIA_LOG).wood(ModBlocks.WISTERIA_WOOD);
-        //blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_WISTERIA_LOG).log(ModBlocks.STRIPPED_WISTERIA_LOG).wood(ModBlocks.STRIPPED_WISTERIA_LOG);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_WISTERIA_LOG).log(ModBlocks.STRIPPED_WISTERIA_LOG).wood(ModBlocks.STRIPPED_WISTERIA_WOOD);
 
         wisteriaPool.stairs(ModBlocks.WISTERIA_STAIRS);
         wisteriaPool.slab(ModBlocks.WISTERIA_SLAB);
@@ -61,12 +61,14 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.WISTERIA_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.WISTERIA_TRAPDOOR);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WISTERIA_LEAVES);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.WISTERIA_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.RECALL_SCROLL_ITEM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RECALL_SCROLL_BETA, Models.GENERATED);
         itemModelGenerator.register(ModItems.HAMBURGER, Models.GENERATED);
         itemModelGenerator.register(ModItems.ASHENWOOD_ROD, Models.GENERATED);
         itemModelGenerator.register(ModItems.ASHENWOOD_WASTER, Models.HANDHELD);

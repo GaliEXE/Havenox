@@ -1,14 +1,17 @@
-// 1.20.4	2024-04-18T17:07:55.6802219	Havenox/Tags for minecraft:block
+// 1.20.4	2024-05-06T17:20:55.2479758	Havenox/Tags for minecraft:block
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_diamond_tool.json
 adaf4c5b71e55ed777d3c02e8aaba0aa2f462f7d data\minecraft\tags\blocks\fence_gates.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\walls.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\pickaxe.json
-7a3037ade747074471373db27475fc589754a9a3 data\minecraft\tags\blocks\logs.json
+811478b47e8e90cd78968519840c3feac9d0b3ee data\minecraft\tags\blocks\leaves.json
+3b561687c70d3209309c66aaca2e0e5af32b3ae2 data\minecraft\tags\blocks\logs.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\shovel.json
+64ad9a25bec5e14cff77640392f55d439836a262 data\minecraft\tags\blocks\planks.json
+811478b47e8e90cd78968519840c3feac9d0b3ee data\minecraft\tags\blocks\mineable\hoe.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_iron_tool.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\mineable\hoe.json
-05bdcb890c9cb32b955836d16d781de91b4b413d data\minecraft\tags\blocks\mineable\axe.json
+d7608e47b591deddef06e521dd7d3f5254041fb4 data\minecraft\tags\blocks\mineable\axe.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\minecraft\tags\blocks\needs_stone_tool.json
+44809da6f39be8b8d191a173472f23b0bff7f722 data\minecraft\tags\blocks\saplings.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
 f74c775399793d84494f97a862b87fd8774871c3 data\minecraft\tags\blocks\fences.json
 f74c775399793d84494f97a862b87fd8774871c3 data\minecraft\tags\blocks\wooden_fences.json

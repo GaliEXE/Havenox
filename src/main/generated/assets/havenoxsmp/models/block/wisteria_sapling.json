@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "havenoxsmp:block/wisteria_sapling"
+  }
+}
